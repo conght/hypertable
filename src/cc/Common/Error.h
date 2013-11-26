@@ -254,7 +254,9 @@ namespace Hypertable {
       THRIFTBROKER_BAD_SCANNER_ID                  = 0x00090001,
       THRIFTBROKER_BAD_MUTATOR_ID                  = 0x00090002,
       THRIFTBROKER_BAD_NAMESPACE_ID                = 0x00090003,
-      THRIFTBROKER_BAD_FUTURE_ID                   = 0x00090004
+      THRIFTBROKER_BAD_FUTURE_ID                   = 0x00090004,
+
+      REPLICATION_CLUSTER_NOT_FOUND                = 0x000A0001
     };
 
     /** Returns a descriptive error message

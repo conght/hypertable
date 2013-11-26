@@ -142,7 +142,6 @@ namespace Hypertable {
       virtual void pread(ResponseCallbackRead *cb, uint32_t fd, uint64_t offset,
                          uint32_t amount, bool verify_checksum) = 0;
 
-
       ///TODO: document this
       virtual void posix_readdir(ResponseCallbackPosixReaddir *,
                         const char *dname) = 0;

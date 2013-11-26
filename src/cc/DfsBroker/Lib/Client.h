@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2007-2012 Hypertable, Inc.
  *
  * This file is part of Hypertable.
@@ -19,6 +19,12 @@
  * 02110-1301, USA.
  */
 
+/** @file
+ * Type declarations for Client class.
+ * This file contains the type declarations for Client, a class that provides
+ * access to the distributed filesystem.
+ */
+
 #ifndef HYPERTABLE_DFSBROKER_CLIENT_H
 #define HYPERTABLE_DFSBROKER_CLIENT_H
 
@@ -36,8 +42,18 @@
 #include "ClientBufferedReaderHandler.h"
 #include "Protocol.h"
 
+namespace Hypertable {
+  
+  /** DfsBroker definitions */
+  namespace DfsBroker {
 
-namespace Hypertable { namespace DfsBroker {
+    /** @defgroup Lib Lib
+     * @ingroup DfsBroker
+     * %DfsBroker client library and broker server framework.
+     * The Lib module contains defintions for the client access library to the
+     * DfsBroker and also contains common framework code for broker servers.
+     * @{
+     */
 
     /** Proxy class for DFS broker.  As specified in the general contract for a
      * Filesystem, commands that operate on the same file descriptor are
@@ -213,6 +229,8 @@ namespace Hypertable { namespace DfsBroker {
     };
 
     typedef intrusive_ptr<Client> ClientPtr;
+
+    /* @} */
 
 }} // namespace Hypertable::DfsBroker
 
