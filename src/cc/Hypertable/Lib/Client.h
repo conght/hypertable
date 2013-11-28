@@ -123,6 +123,8 @@ namespace Hypertable {
 
     NameIdMapperPtr get_nameid_mapper();
 
+    PropertiesPtr &get_properties();
+
     void close();
     void shutdown();
 
